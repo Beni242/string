@@ -24,15 +24,15 @@ void Alphabet( char name[])
 
 int main(void)
 {
-    char name[1000];
+    char N[1000];
     
       printf("enter characters : ");
-    fgets(name , sizeof(name), stdin);
+    fgets(N , sizeof(N), stdin);
     
-     name[strcspn(name, "\n")] = '\0';
+     N[strcspn(N, "\n")] = '\0';
     
-    Alphabet(name);
+    Alphabet(N);
      
-      printf("string : %s\n", name);
+      printf("string : %s\n", N);
 }
     
